@@ -75,18 +75,5 @@ Replace `http://host.docker.internal:11434/api/generate` with your Ollama endpoi
 - **Error Handling:** API returns clear error messages and logs failures. This helps with debugging and transparency, but for a production tool, more granular error codes and user-friendly messages could be added.
 - **Extensible:** The codebase is modular, making it easy to swap out the model, add endpoints, or integrate with other local tools. However, it currently assumes a single model and endpoint; multi-model or multi-user support would require further abstraction.
 - **Model Selection:** The model is set via environment variable. For more flexibility, the API or CLI could allow dynamic model selection per request.
-- **No GPU info:** Node.js does not natively expose GPU info; see `/status` for CPU/memory. For advanced monitoring, integration with system tools or native modules would be needed.
 - **Security:** The API is open by default for local use. For shared or production environments, authentication and rate limiting should be considered.
 
----
-
-## Improvements & Ideas
-- Add model selection via API/CLI
-- Stream responses for long outputs
-- Add authentication for local API
-- Expose Ollama model list/status
-
----
-
-## License
-MIT 
