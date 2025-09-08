@@ -1,0 +1,64 @@
+{
+  "nodes": {
+    "src/cli.js": {
+      "name": "src/cli.js",
+      "metadata": {
+        "converted": false,
+        "remainingDependencies": 0,
+        "cyclic": false,
+        "cyclicDeps": []
+      },
+      "dependencies": [],
+      "dependents": []
+    },
+    "src/server.js": {
+      "name": "src/server.js",
+      "metadata": {
+        "converted": false,
+        "remainingDependencies": 1,
+        "cyclic": false,
+        "cyclicDeps": []
+      },
+      "dependencies": [
+        {
+          "name": "utils/logging.js",
+          "metadata": {
+            "converted": false,
+            "remainingDependencies": 0,
+            "cyclic": false,
+            "cyclicDeps": []
+          },
+          "dependencies": {},
+          "dependents": {}
+        }
+      ],
+      "dependents": []
+    },
+    "utils/logging.js": {
+      "name": "utils/logging.js",
+      "metadata": {
+        "converted": false,
+        "remainingDependencies": 0,
+        "cyclic": false,
+        "cyclicDeps": []
+      },
+      "dependencies": [],
+      "dependents": [
+        {
+          "name": "src/server.js",
+          "metadata": {
+            "converted": false,
+            "remainingDependencies": 1,
+            "cyclic": false,
+            "cyclicDeps": []
+          },
+          "dependencies": {},
+          "dependents": {}
+        }
+      ]
+    }
+  },
+  "id": "id_a8ykaiz7k",
+  "root": "/Users/somya/Desktop/somya_labs/migrator-rough/repos/local-llm",
+  "name": "local-llm"
+}
