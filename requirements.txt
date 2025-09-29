@@ -1,0 +1,4 @@
+requests>=2.25.1
+flask>=2.0.0
+axios>=0.21.1
+psutil>=5.8.0
